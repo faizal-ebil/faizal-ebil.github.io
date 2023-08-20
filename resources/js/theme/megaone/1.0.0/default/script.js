@@ -449,7 +449,7 @@ jQuery(function($){
         onHoverStop:'off',
         arrows:{
           style:'hesperiden link',
-          enable:true,
+          enable:false,
           hide_onmobile:false,
           hide_onleave:false,
           tmp:'',
