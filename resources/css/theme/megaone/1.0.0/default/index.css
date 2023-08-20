@@ -179,15 +179,19 @@
   background:#2a2e33;
   border-radius:4px 0px 4px 4px;
 }
+
 .timeline .parent > .child:nth-child(even) .content:before{right:-38px;}
 
 .timeline-content-info{
   background-color:#6497bf;
+  background:linear-gradient(to right, #faaf40 0%, #f6921e 52%, #f05a28 83%, #ec1c24 100%) !important;
   border-radius:4px;
   display:flex;
   justify-content:space-between;
   padding:2%;
 }
+
+
 
 .content-skills{margin:15px 0px 0px 0px;}
 .content-skills span{
@@ -218,4 +222,25 @@
   }
 
   .timeline .parent > .child:nth-child(even) .content:before{left:-33px;}
+
+  .timeline-content-info{
+    flex-direction:column;
+  }
+
+  .timeline-content-info i{
+    display:none;
+  }
+
+  .timeline-content-info-title{
+    font-weight:bold;
+  }
+
+  .timeline-content-info-date::before{
+    content:'(';
+  }
+
+  .timeline-content-info-date::after{
+    content:')';
+  }
+  
 }
